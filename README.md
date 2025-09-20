@@ -27,7 +27,7 @@
 
 1. Clone repository นี้:
 ```bash
-git clone https://github.com/BugNoTensei/CalcEdge.dev2.0.git
+git clone https://github.com/BugNoTensei/CalcEdge.dev.git
 ```
 
 2. เปิดไฟล์ `index.html` ในเบราว์เซอร์เพื่อเริ่มใช้งาน
