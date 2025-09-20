@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ข้อมูลส่วนตัว</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;600&display=swap" rel="stylesheet">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="css/css_profile.css">
+</head>
+<body>
+  <nav class="modern-navbar">
+    <div class="navbar-container">
+      <a href="index.html" class="navbar-brand">CalcEdge.dev</a>
+      
+      <button class="hamburger">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </button>
+      
+      <ul class="nav-menu">
+        <li class="nav-item">
+          <a href="index.html" class="nav-link">
+            <i class="fas fa-home"></i>หน้าหลัก
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="profile.html" class="nav-link active">
+            <i class="fas fa-user"></i>ข้อมูลส่วนตัว
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="gpa.html" class="nav-link">
+            <i class="fas fa-calculator"></i>คำนวณ GPA
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="vat.html" class="nav-link">
+            <i class="fas fa-percent"></i>คำนวณ VAT
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="contact.html" class="nav-link">
+            <i class="fas fa-envelope"></i>ติดต่อ
+          </a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  <div class="container">
+    <div class="container-content personal-info shadow-sm">
+      <!-- ทักทาย -->
+      <h1 class="mb-4 fs-4">
+        👋 สวัสดีครับ! เรานิว เอง ยินดีต้อนรับสู่โลกของเราเอง 😊<br>
+        <small class="text-muted fs-6">
+          ตอนนี้เรากำลังฝึกเขียนโปรแกรมและทำเว็บอยู่ล่ะ! ในหัวมีโปรเจกต์ที่อยากทำมากมายเลยล่ะ 💡 มีความฝันอยากเป็น 
+          <mark>Software engineer 💻✨</mark> 
+          แต่ตอนนี้ก็ยังเป็นมือใหม่อยู่เลย 😅
+        </small>        
+      </h1>
+      
+        
+      <h2 class="section-title mb-3 fs-2">👤 มารู้จักกันหน่อยมั้ย?</h2>
+      <ul class="list-unstyled fs-6">
+        <li><i class="fas fa-user-circle me-2" style="color: #4CAF50;"></i><strong>ชื่อ:</strong> สมชาย ใจดี <span style="color: #ff6347;">🌟</span></li>
+        <li><i class="fas fa-school me-2" style="color: #FF9800;"></i><strong>กำลังศึกษา:</strong> ชั้นมัธยมศึกษาปีที่ 6 <span style="color: #ffcc00;">🏫</span></li>
+        <li><i class="fas fa-code me-2" style="color: #2196F3;"></i><strong>อาชีพ:</strong> นักเรียน <span style="color: #00bcd4;">🎓</span></li>
+      </ul>
+      
+      
+      <h2 class="section-title fs-3"><i class="fas fa-code-branch fs-3"></i> Dev Links</h2>
+      <div class="social-icons">
+        <a href="https://github.com/Newkab122" target="_blank" class="icon github">
+          <i class="fab fa-github"></i>
+        </a>
+        <a href="https://www.hackerrank.com/panupatnewkab12" target="_blank" class="icon hackerrank">
+          <i class="fab fa-hackerrank"></i>
+        </a>
+      </div>
+    </div>
+  </div>
+  
+   
+    <div class="container-content">
+      <h2 class="mb-4">
+        <i class="fas fa-award me-2 text-warning"></i> เกียรติบัตร ที่ภาคภูมิใจของเรา
+      </h2>
+      <div class="row g-4">
+        <!-- ใบที่ 1 -->
+        <div class="col-md-6 certificate-item">
+          <div class="card border-0 shadow-sm certificate-card h-100">
+            <img src="certicate/cert1btd.png" class="card-img-top rounded" alt="เกียรติบัตร 1" data-bs-toggle="modal" data-bs-target="#certModal" onclick="showCert(this.src)">
+            <div class="card-body">
+              <p class="card-text">
+                <i class="fas fa-check-circle text-success me-2"></i>
+                ผ่านการอบรมคอร์ส Lite : Fundamental Web Dev with HTML5 & CSS3 จาก Borntodev
+              </p>
+            </div>
+          </div>
+        </div>
+    
+        <!-- ใบที่ 2 -->
+        <div class="col-md-6 certificate-item">
+          <div class="card border-0 shadow-sm certificate-card h-100">
+            <img src="certicate/cert2btd.png" class="card-img-top rounded" alt="เกียรติบัตร 2" data-bs-toggle="modal" data-bs-target="#certModal" onclick="showCert(this.src)">
+            <div class="card-body">
+              <p class="card-text">
+                <i class="fas fa-check-circle text-success me-2"></i>
+                ผ่านการอบรมคอร์ส Essential SQL for Everyone จาก Borntodev
+              </p>
+            </div>
+          </div>
+        </div>
+    
+        <!-- ใบที่ 3 -->
+        <div class="col-md-6 certificate-item">
+          <div class="card border-0 shadow-sm certificate-card h-100">
+            <img src="certicate/cert3btd.png" class="card-img-top rounded" alt="เกียรติบัตร 3" data-bs-toggle="modal" data-bs-target="#certModal" onclick="showCert(this.src)">
+            <div class="card-body">
+              <p class="card-text">
+                <i class="fas fa-check-circle text-success me-2"></i>
+                ผ่านการอบรมคอร์ส ChatGPT for Developers จาก Borntodev
+              </p>
+            </div>
+          </div>
+        </div>
+        <!-- ใบที่ 4 -->
+        <div class="col-md-6 certificate-item">
+          <div class="card border-0 shadow-sm certificate-card h-100">
+            <img src="certicate/cert1.jpg" class="card-img-top rounded" alt="เกียรติบัตร 3" data-bs-toggle="modal" data-bs-target="#certModal" onclick="showCert(this.src)">
+            <div class="card-body">
+              <p class="card-text">
+                <i class="fas fa-check-circle text-success me-2"></i>
+                ผ่านการทดสอบ JavaScript จากเว็บ hackerrank
+              </p>
+            </div>
+          </div>
+        </div>
+        <!-- ใบที่ 5 -->
+        <div class="col-md-6 certificate-item">
+          <div class="card border-0 shadow-sm certificate-card h-100">
+            <img src="certicate/cert2.jpg" class="card-img-top rounded" alt="เกียรติบัตร 3" data-bs-toggle="modal" data-bs-target="#certModal" onclick="showCert(this.src)">
+            <div class="card-body">
+              <p class="card-text">
+                <i class="fas fa-check-circle text-success me-2"></i>
+                ผ่านการทดสอบ SQL จากเว็บ hackerrank
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  
+  <!-- Modal สำหรับดูรูปใหญ่ -->
+  <div class="modal fade" id="certModal" tabindex="-1" aria-labelledby="certModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="certModalLabel">เกียรติบัตร</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body text-center">
+          <img id="modalImg" class="img-fluid" alt="เกียรติบัตร">
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <!-- Bootstrap JS Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+    // สคริปต์ของ Hamburger Menu
+    const hamburger = document.querySelector('.hamburger');
+    const navMenu = document.querySelector('.nav-menu');
+    
+    hamburger.addEventListener('click', () => {
+      hamburger.classList.toggle('active');
+      navMenu.classList.toggle('active');
+    });
+    
+    // ปิดเมนู
+    document.querySelectorAll('.nav-link').forEach(link => {
+      link.addEventListener('click', () => {
+        hamburger.classList.remove('active');
+        navMenu.classList.remove('active');
+      });
+    });
+  </script>
+  <script>
+    function showCert(src) {
+      document.getElementById("modalImg").src = src;
+    }
+    
+    document.addEventListener('keydown', function(event) {
+      if (event.key === 'Escape') {
+        const modal = bootstrap.Modal.getInstance(document.getElementById('certModal'));
+        if (modal) modal.hide();
+      }
+    });
+  </script>
+</body>
+</html>
